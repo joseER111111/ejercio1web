@@ -3,16 +3,379 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="js/js.js">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <title>elementos web
     </title>
 </head>
 <body>
-    <nav  class="navbar bg-primary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand text-center">Ballenas azules</a>
+
+  <nav class="navbar navbar-expand-lg bg-primary"data-bs-theme="dark">
+    <div class="container-fluid" style="width: 300px;  margin: .5%;">
+      <a class="navbar-brand">Universidad Maritima de Manzanillo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#">Link</a> -->
+          </li>
+          <li class="nav-item dropdown">
+            <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a> -->
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+          </li>
+        </ul>
+        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          conocenos
+        </button>
+      </div>
+    </div>
+  </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Universidad Maritima de Manzanillo</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Hola, Nos da gusto tenerte por nuestra pagina,<br><u>siguenos en nuestras redes sociales para que no te pierdas de nada:</u>
+          <br>FACEBOOK: Univedad Maritima Ofical de Manzanillo<br>
+              INSTAGRAM: UMMOFF
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="contenedor">
+    <br>
+    <h1 class="text-center titulo">Ballenas azules</h1>
+    <div class="contenedorr">
+      <p>La ballena azul es el animal conocido más grande que que vive 
+       en la Tierra. Estos majestuosos mamíferos marinos dominan los
+       océanos con sus 30 metros de longitud y hasta 180 toneladas de 
+       peso. Solo su lengua puede pesar tanto como un elefante, y el 
+       corazón, como un automóvil. Recibe también el nombre de rorcual
+       azul, compartiendo familia con otros rorcuales como el rorcual común
+       o el rorcual boreal. Las ballenas azules alcanzan estas desorbitadas 
+       dimensiones con una dieta compuesta de plancton y krill, un animal
+       parecido a un camarón diminuto. En determinados momentos del año, 
+       una ballena azul adulta consume unas 3,5 toneladas de krill al día.
+       Es precisamente el aumento de krill lo que los expertos señalan como la 
+       causa de que estos cetáceos, gravemente amenazados, estén volviendo a 
+       dejarse ver por aguas españolas.</p>
+    </div>
+  </div>
+
+
+  <div id="carouselExampleCaptions" class="carousel slide" class="width 100%">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <p class="text-center">Tres diferentes tipos de ballenas</p>
+      <div class="carousel-item active">
+        <img src="./imagenes/azules.jpg" class="d-block w-100" alt="Lo sentimos  nos cargo la imagen">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>ballena azul 1</h5>
+          <p>una ballena chida.</p>
+        </div>
+      </div>
+     <div>
+      <div class="carousel-item">
+        <img src="./imagenes/ballenato.jpg" class="d-block w-100" alt="Lo sentimos  nos cargo la imagen">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ballena gris</h5>
+          <p>ballena dible chida.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./imagenes/lasballenas.jpg" class="d-block w-100" alt="Lo sentimos  nos cargo la imagen">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev"id="boton1" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div> 
+<br><br>
+
+<div>
+<h1 class="text-center">Amenazas</h1>
+</div>
+
+
+<br><br>
+<div class="balle row align-items-start" >
+  <div class="col">
+    <img class="habitat d-block w-100" src="./imagenes/habitat.jpg"  alt="Lo sentimos  nos cargo la imagen">
+  </div>
+  <div class="col">
+        <p>
+          A pesar de una moratoria sobre la caza comercial de ballenas y la prohibición
+          del comercio internacional de productos de ballenas, tres países, Islandia, 
+          Japón y Noruega, continúan con su caza comercial de ballenas. Se matan más de
+          1,000 ballenas al año con fines comerciales. Durante el siglo XX, la ballena
+          azul, el animal más grande que jamás haya existido, fue casi exterminada debido 
+          a la caza comercial de ballenas. Estados Unidos y otros países miembros de la 
+          Comisión Ballenera Internacional (CBI) han tratado durante años de persuadir a Islandia,
+         Japón y Noruega para que pongan fin a la caza de ballenas, ya que socava la eficacia de
+          la prohibición de la caza comercial de ballenas establecida por la comisión. Sin embargo,
+         en 2019, Japón decidió alejarse de la CBI y ahora realiza la caza comercial de ballenas en 
+         sus propias aguas territoriales, fuera de cualquier control internacional.El calentamiento de
+         los océanos y la pérdida de hielo marino en el Ártico y la Antártida pueden afectar los hábitats
+         y la alimentación de las ballenas. Es probable que grandes parches de diminutas plantas y animales,
+         de los que se alimentan, se muevan o cambien en abundancia a medida que el cambio climático altera la
+         temperatura del agua del mar, los vientos y las corrientes oceánicas.            
+        </p>
+  </div>
+</div>
+<br><br><br>
+
+<div class="contenedor2">
+  <h2 class="text-center">Dónde viven y qué comen las ballenas con barbas o misticetos</h2>
+  <div class="contenedors">
+  <div>
+  <div class="alert alert-warning" role="alert">
+    Son cetáceos con barbas en lugar de dientes que utilizan para la filtración 
+    y la alimentación. Se pueden dividir en cuatro familias: las ballenas francas, 
+    las ballenas francas enanas, los rorcuales y las ballenas grises.
+  </div>
+  
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Ballenas francas                                 
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Se alimentan por una técnica conocida como espumación, que consiste en una alimentación continua donde el agua con el alimento va entrando entre las barbas a través de un nado en superficie, 
+                                      muy lento y continuo. Se puede encontrar la ballena franca austral en distintos océanos principalmente del hemisferio sur (Atlántico sur, Pacifico sur, etcétera) y parte del polo sur, si 
+                                      bien migran y se reproducen en aguas más cálidas durante el invierno.También es posible encontrar algunos ejemplares en el Pacífico norte, donde también puede encontrarse la ballena franca 
+                                      del Pacífico norte. En cambio, la ballena franca glacial habita</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Rorcuales
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Se alimentan mediante la técnica de engullida, ya que poseen pliegues bajo la mandíbula que le permiten dilatar la boca para engullir 
+                                        grandes cantidades de agua. Luego el agua es filtrada y el alimento pasa entre las barbas. En aguas del océano Atlántico norte, 
+                                        Pacífico norte o Antártico podemos encontrar el rorcual común y el rorcual o ballena azul. Te recomendamos leer este otro artículo 
+                                        sobre Por qué la ballena azul está en peligro de extinción.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Ballenas grises
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Son ballenas de tamaño mediano, que habitan principalmente en aguas del Pacífico (aunque no hay muchos ejemplares),
+                                     donde se alimentan de pequeños crustáceos, como el krill, que habitan el fango, el cual escarban con su hocico para 
+                                     captarlo junto con el alimento. Luego filtran el lodo y absorben el alimento a través de sus barbas.</div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="contenedor2">
+   <div class="contenedorr">
+    <h1>Biologos importantes para</h1>
+    <p>Los biólogos marinos estudian y llevan a cabo una investigación sobre todos los aspectos de la 
+      vida marina. Sin embargo, a menudo trabajan con organismos pequeños y microorganismos, tales como
+       peces, bacterias, plancton, algas y larvas de peces, etc. Los biólogos marinos aplican tecnologías
+       sofisticadas, como microscopios electrónicos para el estudio de las muestras, y ordenadores para
+       modelar los ecosistemas marinos. Analizan los resultados estadísticos, utilizando medios informáticos
+        y computadoras.<br> <u>Haremos mención honorifica a 3 biologos importantes a continuación:</u></p>
+    <div class="row">
+     <div class="card col" style="width: 18rem;">
+      <img src="./imagenes/bio1.jpg" class="card-img-top" alt="...">
+         <div class="card-body">
+           <p class="card-text">Juan Manuel, Nacido en Durango, egresado como biologo maritivo.</p>
+        </div>
+      </div>
+      <div class="card col" style="width: 18rem;">
+        <img src="./imagenes/bioMarinos.jpg" class="card-img-top" alt="perdon, hubo un problema con el sistema">
+           <div class="card-body">
+             <p class="card-text">Francisco Juares, biologo especializado en el área Maritima</p>
+            </div>
+          </div>
+          <div class="card col" style="width: 18rem;">
+            <img src="./imagenes/bio3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">pedro Fracisco, Biologo especializado en el area.</p>
+            </div>
+          </div>
+     </div>
+   </div>
+</div>
+<br><br><br><br><br>
+
+<div class="contenedor2">
+  <div class="contenedorr">
+    <h1>¿Qué está haciendo WWF?</h1>
+    <p>Durante muchos años WWF ha trabajado con la Comisión para la Conservación
+      de los Recursos Vivos Marinos Antárticos (CCRVMA) para proteger los hábitats
+      más críticos de especies emblemáticas como ballenas, pingüinos, focas, aves
+      marinas y su presa: el diminuto krill antártico. En el océano Antártico o
+      Meridional, la CCRVMA se ha comprometido a implementar una red de áreas marinas
+      protegidas alrededor de la Antártida para proteger una diversidad de vida silvestre
+      afectada por el cambio climático, incluyendo las áreas donde las ballenas se 
+      alimentan del pequeño krill. WWF trabaja con los científicos para generar información 
+      importante que ayude a los gobiernos a proteger estas vitales áreas de alimentación.</p>
+
+<button type="button" class="btn btn-primary" id="liveToastBtn">Apoyanos</button>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto">UMM</strong>
+        <small>11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+               <div class="toast-body">
+                  Hola, recuerda seguirnos en nuestras redes sociales para apoyar a las ballenas.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<div class="contenedor2">
+  <div class="contenedorr">
+    <h1>Datos interesantes sobre la ballena jorobada</h1>
+      <p>La ballena jorobada (Megaptera novaeangliae), también llamada ballena yubarta, 
+        es una especie de cetáceo misticeto de la familia Balaenopteridae. Es una de los
+        ballenas más grandes, los adultos tienen una longitud de 12 a 16 m y un peso 
+        aproximado de 36.000 kg. La especie posee una forma corporal distintiva, con aletas 
+        pectorales largas y cabeza nudosa. Es un animal acrobático que con frecuencia se
+        impulsa sobre la superficie para luego golpear el agua. Los machos emiten un canto
+        complejo, el cual dura de diez a veinte minutos y se repite por horas cada vez.
+        El propósito del canto no es claro. Sin embargo, parece desempeñar una función en 
+        el apareamiento.</p>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Universidades especializadas</button>
+
+      <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Tres  universidades especializadas en el tema</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+           </div>
+             <div class="offcanvas-body small">
+                    <h4>El Instituto Marítimo Español (IME):</h4>
+                       <p>El “IME” es una empresa privada fundada en el año 1984 por un grupo de profesionales del sector con el objetivo 
+                        prioritario de desarrollar actividades que impulsaran el prestigio de la presencia marítima española en el sector naval.
+                         Entre sus actividades destacan aquellas dedicadas a cubrir las necesidades de formación existentes en la actividad marítima 
+                         (programas máster, cursos monográficos, cursos de postgrado y especialización, etcétera), realizadas o bien exclusivamente
+                          por el IME</p>
+                          <br>
+                      <h4>Cátedra del Mar:</h4>
+                        <p>En junio de 2019 tuvo lugar la presentación de la recientemente creada «Cátedra del Mar», fruto de la colaboración entre
+                           la Universidad Católica de Murcia (UCAM) y el IME. Esta cátedra nace con el claro objetivo de fomentar la vocación marítima,
+                            trabajando por la mar y por sus profesionales. Su forma de trabajar estará alineada con la Agenda 2030 de la ONU para el 
+                            desarrollo sostenible, persiguiendo un entorno marítimo más sostenible.</p>
+                            <br>
+                      <h4>Campus de Excelencia Internacional del Mar (CEI·MAR):</h4>
+                      <p>El CEI·MAR es una unión de universidades, centros de investigación y empresas de Andalucía, sur de Portugal y norte de Marruecos,
+                         que probablemente constituyan una de las mayores alianzas de España, y tal vez del mundo, en el ámbito marino-marítimo.</p>
+                          <br>
           </div>
         </div>
-      </nav>o
+    </div>
+ </div>
+ <br>
+
+ <div class="contenedor2">
+  <div class="contenedorr">
+    <h2>Datos interesantes</h2>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Especies de ballenas</th>
+          <th scope="col">comida</th>
+          <th scope="col">hábitat   </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>balla franca</td>
+          <td>Kril-alimento base de las ballenas.</td>
+          <td>plataformas continentales</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>ballena gris</td>
+          <td>Copépodos planctónicos. </td>
+          <td>campos de hielo abierto</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>ballena azul</td>
+          <td>Otros pequeños animales</td>
+          <td> mar profundo</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ </div>
+   <br>
+
+   <div class="balle row align-items-start" >
+    <div class="text-center">
+   <h1>Video informativo</h1>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/BzNbA_J8nD4?si=epYN8YbXMoD8-r5u"
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+     allowfullscreen></iframe>
+    </div>
+   </div>
+   <br><br>
+
+
 </body>
+<script src="js/js.js"></script>
 </html>
+
